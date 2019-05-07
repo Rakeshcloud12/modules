@@ -6,7 +6,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 class Module(ModuleBase):
-    """Module class to do some lofic."""
+    #"""Module class to do some lofic."""
 
     def __init__(self):
         print('Loading Module 1')

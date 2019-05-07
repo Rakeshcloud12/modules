@@ -8,7 +8,9 @@ LOGGER = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     module_number = sys.argv[1]
-
+    print(sys.argv[1])
+    print(module_number)
+    
     LOGGER.info(f'importing module: {module_number}')
 
     module_name = f'module_{module_number}.module'
