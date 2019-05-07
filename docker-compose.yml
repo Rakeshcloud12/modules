@@ -1,0 +1,14 @@
+#docker-compose.yml
+version: '3'
+
+services:
+  rakesh/bidvest-modules:
+      build: .
+      image: ubuntu:18.04
+      container_name: rakesh/bidvest-modules
+# Volumes: To make chnages effected immidiately on local / Dev environment to container
+volumes: 
+  - /app/modules
+  - .:/app/modules
+restart: unless-stopped  
+tty: true
